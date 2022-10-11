@@ -4,7 +4,7 @@ This is a  powershell script that will build a customized Windows 10/11 ISO bund
 
 ### Dependencies
 
- - oscdming must be available in PATH (provided with Windows ADK)
+ - oscdming must be available in PATH (provided with [Windows ADK](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install))
 
 ### How to Use
 
