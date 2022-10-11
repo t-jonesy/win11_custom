@@ -1,0 +1,7 @@
+*.iso
+*.xml
+drivers/*
+tmp/*
+mount/*
+output/*
+!drivers/put_drivers_here
