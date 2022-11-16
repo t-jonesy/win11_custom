@@ -25,11 +25,11 @@ Dism /Mount-Image /ImageFile:"$path\tmp\sources\install.wim" /Index:$index /Moun
 
 
 #Remove unused drivers
-$drivers = pnputil /enum-drivers
-$oems = $drivers | Select-String -Pattern "Published Name" | %{$_.Line.Split(" ")} | Select-String -Pattern ".inf"
-foreach($line in $oems) {
-  pnputil.exe /delete-driver $line
-}
+#$drivers = pnputil /enum-drivers
+#$oems = $drivers | Select-String -Pattern "Published Name" | %{$_.Line.Split(" ")} | Select-String -Pattern ".inf"
+#foreach($line in $oems) {
+#  pnputil.exe /delete-driver $line
+#}
 
 #Export and add drivers
 Write-Output "Exporting drivers"
